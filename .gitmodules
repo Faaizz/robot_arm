@@ -1,0 +1,6 @@
+[submodule "gazebo/cogimon-gazebo-models"]
+	path = gazebo/cogimon-gazebo-models
+	url = https://github.com/corlab/cogimon-gazebo-models.git
+[submodule "gazebo/aws-robomaker-small-warehouse-world"]
+	path = gazebo/aws-robomaker-small-warehouse-world
+	url = https://github.com/aws-robotics/aws-robomaker-small-warehouse-world.git
