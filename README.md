@@ -11,6 +11,17 @@ Integrated planning and control of a robot arm in an industrial scenario
 7. Plan a trajectory to the location of the ball from the tip of the robot arm
 8. Touch the ball with the tip of the robot arm
 
+## Implementation
+### Gazebo world & robot arm (no ROS2)
+```
+# start a simulation with the factory world
+make
+
+# in a different terminal
+# spawn the kuka-lwr-4plus robot arm
+make robot
+```
+
 ## References
 - https://www.ce.cit.tum.de/ics/research/platforms/kuka-lwr-4/
 - https://www.dlr.de/en/rm/research/robotic-systems/arms/lwr-iii/history-of-the-dlr-lwr
