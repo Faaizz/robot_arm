@@ -23,5 +23,11 @@ make robot
 ```
 
 ## References
+### Kuka LWR
 - https://www.ce.cit.tum.de/ics/research/platforms/kuka-lwr-4/
 - https://www.dlr.de/en/rm/research/robotic-systems/arms/lwr-iii/history-of-the-dlr-lwr
+### Robotis Open Manipulator X
+- https://emanual.robotis.com/docs/en/platform/openmanipulator_x/ros_simulation/
+- https://github.com/ROBOTIS-GIT/open_manipulator
+- https://github.com/ROBOTIS-GIT/open_manipulator_msgs
+- https://github.com/ROBOTIS-GIT/open_manipulator_dependencies
