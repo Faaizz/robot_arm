@@ -10,5 +10,19 @@ launch:
       - name: "on_exit_shutdown"
         value: "True"
 - node:
+    pkg: "ros_gz_sim"
+    exec: "create"
+    param:
+    - name: "world"
+      value: "default"
+    - name: "file"
+      value: "$(find-pkg-share robot_arm)/description/models/kuka-lwr-4plus/model.urdf"
+    - name: "x"
+      value: 1.5
+    - name: "y"
+      value: 1.5
+    - name: "z"
+      value: 0.0
+- node:
     pkg: "ros_gz_bridge"
     exec: "parameter_bridge"
