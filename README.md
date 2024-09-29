@@ -22,6 +22,13 @@ make
 make robot
 ```
 
+## Usage
+```shell
+cd ros2_ws
+# Launch simulation environment
+make launch
+```
+
 ## References
 ### Kuka LWR
 - https://www.ce.cit.tum.de/ics/research/platforms/kuka-lwr-4/
