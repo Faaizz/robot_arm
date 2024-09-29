@@ -6,5 +6,7 @@ build:
 	mkdir -p install/robot_arm/share/robot_arm/description/models
 	cp -R src/robot_arm/description/models/* install/robot_arm/share/robot_arm/description/models
 
-launch: build
+launch:
 	ros2 launch robot_arm robot_arm.launch.yaml
+
+all: build launch
