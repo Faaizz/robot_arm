@@ -1,0 +1,8 @@
+launch:
+- include:
+    file: "$(find-pkg-share urdf_tutorial)/launch/display.launch.py"
+    arg:
+      - name: "model"
+        value: "$(find-pkg-share kuka_lwr_4_plus_description)/urdf/kuka-lwr-4plus/model.urdf"
+      - name: "rvizconfig"
+        value: "$(find-pkg-share kuka_lwr_4_plus_description)/rviz/kuka.rviz"
