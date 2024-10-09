@@ -5,6 +5,8 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /TF1
+        - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 374
   - Class: rviz_common/Views
@@ -56,6 +58,41 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        gripper_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_left1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_left2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_left3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_right1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_right2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_right3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         link1:
           Alpha: 1
           Show Axes: false
@@ -100,24 +137,38 @@ Visualization Manager:
       Filter (whitelist): ""
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
         base:
+          Value: false
+        gripper_base:
           Value: true
+        gripper_left1:
+          Value: false
+        gripper_left2:
+          Value: false
+        gripper_left3:
+          Value: false
+        gripper_right1:
+          Value: false
+        gripper_right2:
+          Value: false
+        gripper_right3:
+          Value: false
         link1:
-          Value: true
+          Value: false
         link2:
-          Value: true
+          Value: false
         link3:
-          Value: true
+          Value: false
         link4:
-          Value: true
+          Value: false
         link5:
-          Value: true
+          Value: false
         link6:
-          Value: true
+          Value: false
       Marker Scale: 1
       Name: TF
-      Show Arrows: true
+      Show Arrows: false
       Show Axes: true
       Show Names: false
       Tree:
@@ -128,7 +179,17 @@ Visualization Manager:
                 link4:
                   link5:
                     link6:
-                      {}
+                      gripper_base:
+                        gripper_left2:
+                          {}
+                        gripper_left3:
+                          gripper_left1:
+                            {}
+                        gripper_right2:
+                          {}
+                        gripper_right3:
+                          gripper_right1:
+                            {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -145,26 +206,26 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Class: rviz_default_plugins/Orbit
-      Distance: 1.7821342945098877
+      Class: rviz_default_plugins/ThirdPersonFollower
+      Distance: 0.31105509400367737
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.29927340149879456
-        Y: 0.18130649626255035
-        Z: 0.9733218550682068
-      Focal Shape Fixed Size: true
+        X: 0.6026467680931091
+        Y: 0.17432981729507446
+        Z: 2.86102294921875e-06
+      Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4300002455711365
+      Pitch: -0.3246009945869446
       Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
-      Yaw: 3.6699728965759277
+      Value: ThirdPersonFollower (rviz_default_plugins)
+      Yaw: 0.6703982353210449
     Saved: ~
 Window Geometry:
   Displays:
