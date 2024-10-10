@@ -2,11 +2,9 @@
 
 build:
 	rosdep install --from-paths src -y --ignore-src
-	colcon build --symlink-install
-	mkdir -p install/robot_arm/share/robot_arm/description/models
-	cp -R src/robot_arm/description/models/* install/robot_arm/share/robot_arm/description/models
+	colcon build
 
 launch:
-	ros2 launch robot_arm robot_arm.launch.yaml
+	ros2 launch environment_gazebo kuka_lwr_4_plus.launch.py
 
 all: build launch

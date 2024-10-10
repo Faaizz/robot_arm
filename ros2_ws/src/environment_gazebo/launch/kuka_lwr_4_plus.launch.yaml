@@ -1,0 +1,39 @@
+launch:
+  - arg:
+      name: robot_description
+      default: "$(find-exec xacro) $(find-pkg-share kuka_lwr_4_plus_description)/urdf/kuka-lwr-4plus/model.urdf"
+  - arg:
+      name: rvizconfig
+      default: "$(find-pkg-share kuka_lwr_4_plus_description)/rviz/kuka.rviz"
+  - include:
+      file: "$(find-pkg-share environment_gazebo)/launch/small_warehouse.launch.yaml"
+  - node:
+      pkg: "ros_gz_sim"
+      exec: "create"
+      param:
+        - name: "world"
+          value: "default"
+        - name: "file"
+          value: "$(find-pkg-share kuka_lwr_4_plus_description)/urdf/kuka-lwr-4plus/model.urdf"
+        - name: "x"
+          value: 1.5
+        - name: "y"
+          value: 1.5
+        - name: "z"
+          value: 0.0
+  - node:
+      pkg: robot_state_publisher
+      exec: robot_state_publisher
+      param:
+        - name: robot_description
+          value: "$(var robot_description)"
+  - node:
+      pkg: joint_state_publisher_gui
+      exec: joint_state_publisher_gui
+  - node:
+      pkg: joint_state_publisher
+      exec: joint_state_publisher
+  - node:
+      pkg: rviz2
+      exec: rviz2
+      args: "-d $(var rvizconfig)"
