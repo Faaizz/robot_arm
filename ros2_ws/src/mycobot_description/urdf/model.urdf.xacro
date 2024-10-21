@@ -7,13 +7,13 @@
   <link name="base">
     <visual>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/base.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/base.dae"/>
       </geometry>
     <origin xyz = "0 0 0 " rpy = " 1.5707 0 0"/>
     </visual>
     <collision>
     <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/base.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/base.dae"/>
       </geometry>
     <origin xyz = "0 0 0 " rpy = " 1.5707 0 0"/>
     </collision>
@@ -22,13 +22,13 @@
   <link name="link1">
     <visual>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link1.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link1.dae"/>
       </geometry>
     <origin xyz = "0 0 -0.06 " rpy = "0 0 3.1415926"/>
     </visual>
      <collision>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link1.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link1.dae"/>
       </geometry>
     <origin xyz = "0 0 -0.06 " rpy = " 0 0 3.1415926"/>
     </collision>
@@ -38,13 +38,13 @@
   <link name="link2">
     <visual>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link2.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link2.dae"/>
       </geometry>
     <origin xyz = "0 0 -0.0446 " rpy = " 0 -1.5707 -1.5707"/>
     </visual>
      <collision>
      <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link2.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link2.dae"/>
       </geometry>
     <origin xyz = "0 0 -0.0446 " rpy = " 0 -1.5707 -1.5707"/>
     </collision>
@@ -54,13 +54,13 @@
   <link name="link3">
     <visual>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link3.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link3.dae"/>
       </geometry>
     <origin xyz = "0 0 -0.0444 " rpy = " 0 1.5707 -1.5707"/>
     </visual>
      <collision>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link3.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link3.dae"/>
       </geometry>
     <origin xyz = "0 0 -0.0444 " rpy = "0 1.5707 -1.5707"/>
     </collision>
@@ -70,13 +70,13 @@
 <link name="link4">
     <visual>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link4.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link4.dae"/>
       </geometry>
     <origin xyz = "0 0 0.041 " rpy = " -1.5707 0 1.5707"/>
     </visual>
      <collision>
      <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link4.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link4.dae"/>
       </geometry>
     <origin xyz = "0 0 0.041 " rpy = " -1.5707 0 1.5707"/>
     </collision>
@@ -86,13 +86,13 @@
   <link name="link5">
     <visual>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link5.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link5.dae"/>
       </geometry>
     <origin xyz = "-0.043 0  0 " rpy = " 0  -1.5707 3.1415926"/>
     </visual>
      <collision>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link5.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link5.dae"/>
       </geometry>
     <origin xyz = "-0.043 0  0 " rpy = " 0  -1.5707 3.1415926"/>
     </collision>
@@ -101,7 +101,7 @@
   <link name="link6">
     <visual>
       <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link6.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link6.dae"/>
       </geometry>
       <!-- <material name = "grey">
         <color rgba = "0.5 0.5 0.5 1"/>
@@ -110,7 +110,7 @@
     </visual>
      <collision>
      <geometry>
-       <mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/link6.dae"/>
+       <mesh filename="file://$(find mycobot_description)/urdf/link6.dae"/>
       </geometry>
       <!-- <material name = "grey">
         <color rgba = "0.5 0.5 0.5 1"/>
@@ -131,7 +131,7 @@
 		</inertial>
 		<visual>
 		  	<geometry>
-				<mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/gripper_base.dae"/>
+				<mesh filename="file://$(find mycobot_description)/urdf/gripper_base.dae"/>
 		  	</geometry>
 		  	<origin xyz = "0.0 0.0 -0.012" rpy = "0 0 0"/>
 		</visual>
@@ -154,7 +154,7 @@
 		</inertial>
 		<visual>
 		  	<geometry>
-		  		<mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/gripper_left1.dae"/>
+		  		<mesh filename="file://$(find mycobot_description)/urdf/gripper_left1.dae"/>
 		  	</geometry>
 			<origin xyz = "0.039 -0.0133 -0.012 " rpy = " 0 0 0"/>
 		</visual>
@@ -177,7 +177,7 @@
 		</inertial>
 		<visual>
 		  	<geometry>
-		   		<mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/gripper_left2.dae"/>
+		   		<mesh filename="file://$(find mycobot_description)/urdf/gripper_left2.dae"/>
 		  	</geometry>
 			<origin xyz = "0.005 -0.0195 -0.012 " rpy = " 0 0 0"/>
 		</visual>
@@ -200,7 +200,7 @@
 		</inertial>
 		<visual>
 		  	<geometry>
-		   		<mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/gripper_left3.dae"/>
+		   		<mesh filename="file://$(find mycobot_description)/urdf/gripper_left3.dae"/>
 		  	</geometry>
 		<origin xyz = "0.012 0.0025 -0.012 " rpy = " 0 0 0"/>
 		</visual>
@@ -223,7 +223,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-		   		<mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/gripper_right1.dae"/>
+		   		<mesh filename="file://$(find mycobot_description)/urdf/gripper_right1.dae"/>
 		  	</geometry>
 			<origin xyz = "-0.039 -0.0133 -0.012 " rpy = " 0 0 0"/>
 		</visual>
@@ -246,7 +246,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-		   		<mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/gripper_right2.dae"/>
+		   		<mesh filename="file://$(find mycobot_description)/urdf/gripper_right2.dae"/>
 		 	</geometry>
 			<origin xyz = "-0.005 -0.0195 -0.012 " rpy = " 0 0 0"/>
 		</visual>
@@ -269,7 +269,7 @@
 		</inertial>
 		<visual>
 			<geometry>
-		   		<mesh filename="file://$(find mycobot_description)/urdf/mycobot_pro_630/gripper_right3.dae"/>
+		   		<mesh filename="file://$(find mycobot_description)/urdf/gripper_right3.dae"/>
 			</geometry>
 			<origin xyz = "-0.012 0.0025 -0.012 " rpy = " 0 0 0"/>
 		</visual>

@@ -1,0 +1,18 @@
+launch:
+  - arg:
+      name: pkg
+      default: kuka_lwr_4_plus_description
+  - arg:
+      name: model_path
+      default: urdf/model.urdf.xacro
+  - arg:
+      name: rvizconfig
+      default: rviz/config.rviz
+
+  - include:
+      file: "$(find-pkg-share urdf_tutorial)/launch/display.launch.py"
+      arg:
+        - name: "model"
+          value: "$(find-pkg-share $(var pkg))/$(var model_path)"
+        - name: "rvizconfig"
+          value: "$(find-pkg-share $(var pkg))/$(var rvizconfig)"

@@ -13,7 +13,7 @@ def generate_launch_description():
   pkg_kuka_lwr4_plus = get_package_share_directory('kuka_lwr_4_plus_description')
   robot_description_file = os.path.join(
     pkg_kuka_lwr4_plus, 'urdf',
-    'kuka-lwr-4plus', 'model.urdf',
+    'model.urdf.xacro',
   )
   robot_description_config = xacro.process_file(robot_description_file)
   tf = NamedTemporaryFile(delete=False, delete_on_close=False) 
@@ -91,7 +91,7 @@ def generate_launch_description():
         "-d ", 
         PathJoinSubstitution([
           FindPackageShare('kuka_lwr_4_plus_description'),
-          'rviz', 'kuka.rviz',
+          'rviz', 'config.rviz',
         ]),
       ]
     ),
